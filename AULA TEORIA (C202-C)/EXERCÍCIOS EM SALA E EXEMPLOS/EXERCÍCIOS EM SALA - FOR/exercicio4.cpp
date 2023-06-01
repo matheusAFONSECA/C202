@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+	setlocale (LC_ALL, "Portuguese");
+	
+	//declaração de variáveis
+	double i, soma = 0, x;
+	
+	//entrada do valor de x
+	cout<<"Declare o valor de x: ";
+	cin>>x;
+	
+	//inicio da conta e do ciclo
+	for (i = 1; i<=10; i++)
+	{
+		soma = pow(x,i) + soma;
+	}
+	
+	//saída de dados
+	cout<<"f(x)= "<<soma<<endl;
+	
+	return 0;
+	
+}
